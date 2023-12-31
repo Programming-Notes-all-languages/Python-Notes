@@ -69,8 +69,7 @@
   <details>
   <summary>Example Program</summary>
     <ul>
-      ![726e9fb71456dffc81098dfadaec4ce7](https://github.com/Programming-Notes-all-languages/Python-Notes/assets/154717520/46041708-0b1a-457c-8456-3f3fc5e95eea)
-
+      <code>message = "hello world"<br>print(message)<br>message = "hello"<br>print(message)</code>
       <details>
       <summary>Output</summary>
         <l>
