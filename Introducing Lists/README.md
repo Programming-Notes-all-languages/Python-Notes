@@ -17,7 +17,7 @@
     <a href='#removing-elements-from-a-list'>Removing Elements from a List</a>
   </li>
   <li>
-    <a href='#sorting-a-list-with-sort()-method-and-sorted()-function'>Sorting a List with sort() Method and sorted() Function</a>
+    <a href='#sorting-a-list-with-sort-method-and-sorted-function'>Sorting a List with sort Method and sorted Function</a>
   </li>               
 </ol>
 </details>
@@ -103,7 +103,7 @@
   </li> 
 </ul>
 
-## Sorting a List with sort() Method and sorted() Function
+## Sorting a List with sort Method and sorted Function
 <ul>
   <li>
     <a>The sort() method changes the order of a list permanently.  If a list contains only strings, then the sort() method will sort the list in alphabetical order.  If a list contains only numbers, which can be both integers and floats, then the sort() method will sort the list from smallest to largest</a>
