@@ -213,10 +213,10 @@
     <ul>
       <pre>
         <code>
-          firstName = "Garrett"
-	        lastName = "Ellis"
-	        fullName = firstName + " " + lastName
-          print(fullName)
+          firstName = "Garrett"<br />
+          lastName = "Ellis"</br />
+	  fullName = firstName + " " + lastName<br />
+          print(fullName)<br />
         </code>
       </pre> 
       <details>
