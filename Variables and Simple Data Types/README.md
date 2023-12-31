@@ -17,7 +17,7 @@
     <a href='#combining-or-concatenating-strings'>Combining or Concatenating Strings</a>
   </li>
   <li>
-    <a href='#adding/stripping-whitespace-to-strings-with-tabs-or-newlines'>Adding/Stripping Whitespace to Strings with Tabs or Newlines</a>
+    <a href='#adding-and-stripping-whitespace-to-strings-with-tabs-or-newlines'>Adding and Stripping Whitespace to Strings with Tabs or Newlines</a>
   </li>   
   <li>
     <a href='#integers'>Integers</a>
@@ -32,7 +32,7 @@
     <a href='#modulo-operator'>Modulo Operator</a>
   </li>
   <li>
-    <a href='#avoiding-type-errors-with-the-str()-function'>Avoiding Type Errors with the str() Function</a>
+    <a href='#avoiding-type-errors-with-the-str-function'>Avoiding Type Errors with the str Function</a>
   </li> 
   <li>
     <a href='#comments'>Comments</a>
@@ -231,7 +231,7 @@
   </details> 
 </ul>    
 
-## Adding/Stripping Whitespace to Strings with Tabs or Newlines
+## Adding and Stripping Whitespace to Strings with Tabs or Newlines
 <ul>
   <li>
     <a>In programming, whitespace refers to a singular character or a string of characters that represent space.  Whitespace characters are not visibly marked, but they do take up space and memory</a>
@@ -309,7 +309,7 @@
   </li>
 </ul>       
 
-## Avoiding Type Errors with the str() Function
+## Avoiding Type Errors with the str Function
 <ul>
   <li>
     <a>Type errors indicate that Python cannot recognize the kind of information that you are using</a>
