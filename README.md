@@ -14,6 +14,9 @@
     <a href='#changing-case-in-a-string-with-methods'>Changing Case in a String with Methods</a>
   </li> 
   <li>
+    <a href='#combining-or-concatenating-strings'>Combining or Concatenating Strings</a>
+  </li>
+  <li>
     <a href='#adding/stripping-whitespace-to-strings-with-tabs-or-newlines'>Adding/Stripping Whitespace to Strings with Tabs or Newlines</a>
   </li>   
   <li>
@@ -69,12 +72,22 @@
   <details>
   <summary>Example Program</summary>
     <ul>
-      <code>message = "hello world"<br>print(message)<br>message = "hello"<br>print(message)</code>
+      <pre>
+        <code>
+          message = "hello world"        
+          print(message)
+          message = "hello"
+          print(message)
+        </code>
+      </pre> 
       <details>
       <summary>Output</summary>
-        <l>
-          <a>hello world<br>hello</a>
-        </l>  
+        <pre>
+          <code>
+            hello world
+            hello
+          </code>
+        </pre>     
       </details>
     </ul>  
   </details>
@@ -132,12 +145,25 @@
   <details>
   <summary>Example Program</summary>
     <ul>
-      <a>message = "hello world"<br>print(message)<br>message = "hello"<br>print(message)</a>
+      <pre>
+        <code>
+          message = "hello world"
+          print(message)
+          message = message.upper()
+          print(message)
+          message = "hello"
+          print(message)
+        </code>
+      </pre>  
       <details>
       <summary>Output</summary>
-        <l>
-          <a>hello world<br>HELLO WORLD<br>hello</a>
-        </l>  
+        <pre>
+          <code>
+          hello world
+          HELLO WORLD
+          hello
+          </code>
+        </pre>  
       </details>
     </ul>  
   </details>
@@ -176,6 +202,34 @@
     </li>  
   </ul>
 </ul>   
+
+## Combining or Concatenating Strings
+<ul>
+  <li>
+    <a>Python uses the plus symbol to combine strings</a>
+  </li>
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          firstName = "Garrett"
+	        lastName = "Ellis"
+	        fullName = firstName + " " + lastName
+          print(fullName)
+        </code>
+      </pre> 
+      <details>
+      <summary>Output</summary>
+        <pre>
+          <code>
+            Garrett Ellis
+          </code>
+        </pre>     
+      </details>
+    </ul>  
+  </details> 
+</ul>    
 
 ## Adding/Stripping Whitespace to Strings with Tabs or Newlines
 <ul>
@@ -311,4 +365,4 @@
   <li>
     <a>For example, let's say that we have the following variable of type double declared, value = 0.349857.  To change the number of decimal places to, let's say, to be accurate to the hundreds place, we could use the format() function.  This function will also round this number to the specified number of decimal places.  This line of code will change the value of value to what we had previously specified: value = float"{:.2f}".format(value)</a>
   </li>
-</ul>  
+</ul>
