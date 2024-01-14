@@ -33,6 +33,9 @@
   </li> 
   <li>
     <a href='#storing-your-functions-in-modules'>Storing your Functions in Modules</a>
+  </li>  
+  <li>
+    <a href='#call-by-object-reference'>Call by Object Reference</a>
   </li>   
   <li>
     <a href='#random-number-generation'>Random Number Generation</a>
@@ -430,6 +433,27 @@
   </ul>     
 </ul>    
 
+## Call by Object Reference
+<ul>
+  <li>
+    <a>Instead of Python using a system such as pass by reference or pass by value, it uses its own system called pass by object reference.  Some variable types within Python are like pass by reference and others are like pass by value.  This depends on wether the objects are <em>immutable</em> or <em>mutable</em></a>
+    <ul>
+      <li>
+        <a>Immutable objects are objects in Python that cannot be changed once they have been created.  Here is a list of examples of immutable objects: strings, integers, floats, and tuples</a>
+      </li>
+      <li>
+        <a>Mutable objects are objects in Python that can be changed after their creation.  Here is a list of examples of mutable objects: lists, sets, and dictionaries</a>
+      </li>  
+    </ul>
+  </li>
+  <li>
+    <a>If you pass immutable arguments to a function, then it is like passing by value and the object's value cannot be changed by the function</a>
+  </li>
+  <li>
+    <a>If you pass mutable arguments to a function, then it is like passing by reference and the object's value can by changed by the function</a> 
+  </li>   
+</ul>
+
 ## Random Number Generation
 <ul>
   <li>
@@ -505,4 +529,4 @@
       </details>
     </ul>  
   </details>   
-</ul>  
+</ul> 
