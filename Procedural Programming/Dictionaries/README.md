@@ -292,7 +292,7 @@
 <ul>
   <li>
     <a>To loop through all of the values within a dictionary, you could use the values() method</a>
-  <li>
+  </li>
   <details>
   <summary>Example Program</summary>
     <ul>
