@@ -387,7 +387,7 @@
         <code>
           users = {"egarrett": {"first": "Garrett", "last": "Ellis"}, "dellis": {"first": "David", "last": "Ellis"}}<br />
           for key, value in users.items():<br />
-	          print("User: " + key)<br />
+	      print("User: " + key)<br />
           print("First Name: " + value["first"] + "\nLast Name: " + value["last"])<br />
         </code>
       </pre>  
@@ -395,11 +395,11 @@
       <summary>Output</summary>
         <pre>
           <code>
-          	User: egarrett<br />
-		    First Name: Garrett<br />
-		    Last Name: Ellis<br />
-		    User: dellis<br />
-		    First Name: David<br />
+            User: egarrett<br />
+	    First Name: Garrett<br />
+	    Last Name: Ellis<br />
+	    User: dellis<br />
+	    First Name: David<br />
             Last Name: Ellis<br />
           </code>
         </pre>  
