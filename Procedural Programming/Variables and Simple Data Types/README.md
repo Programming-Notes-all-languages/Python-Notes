@@ -215,7 +215,7 @@
         <code>
           firstName = "Garrett"<br />
           lastName = "Ellis"</br />
-	        fullName = firstName + " " + lastName<br />
+	  fullName = firstName + " " + lastName<br />
           print(fullName)<br />
         </code>
       </pre> 
