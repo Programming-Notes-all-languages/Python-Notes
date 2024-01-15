@@ -53,8 +53,8 @@
         <pre>
           <code>
             def hello():<br />
-	              """Display a simple greeting."""<br />
-	              print("Hello!")<br />
+		"""Display a simple greeting."""<br />
+		print("Hello!")<br />
             <br />    
             hello()<br />
           </code>
@@ -141,8 +141,8 @@
       <pre>
         <code>
           def hello(name, age):<br />
-	            """Display a simple greeting."""<br />
-	            print("Hello! " + name + "\nYour age: " + str(age))<br />
+	      """Display a simple greeting."""<br />
+	      print("Hello! " + name + "\nYour age: " + str(age))<br />
           <br />    
           hello("Garrett", 20)<br />
         </code>
@@ -171,8 +171,8 @@
       <pre>
         <code>
           def hello(name, age):<br />
-	            """Display a simple greeting."""<br />
-	            print("Hello! " + name + "\nYour age: " + str(age))<br />
+	      """Display a simple greeting."""<br />
+	      print("Hello! " + name + "\nYour age: " + str(age))<br />
           <br />    
           hello(name = "Garrett", age = 20)<br />
         </code>
@@ -206,8 +206,8 @@
       <pre>
         <code>
           def hello(name, age = 0):<br />
-	            """Display a simple greeting."""<br />
-	            print("Hello! " + name + "\nYour age: " + str(age))<br />
+	      """Display a simple greeting."""<br />
+	      print("Hello! " + name + "\nYour age: " + str(age))<br />
           <br />    
           hello(name = "Garrett")<br />
         </code>
@@ -241,13 +241,13 @@
       <pre>
         <code>
           def formattedName(first, last, middle = " "):<br />
-	            """Returns the formatted name"""<br />
-	            full = " "<br />
-	            if middle == " ":<br />
-	                full = first + " " + last<br />
-	            else:<br />
-	                full = first + " " + middle + " " + last<br />    
-	            return full.title()<br />
+	      """Returns the formatted name"""<br />
+	      full = " "<br />
+	      if middle == " ":<br />
+	          full = first + " " + last<br />
+	      else:<br />
+	          full = first + " " + middle + " " + last<br />    
+	      return full.title()<br />
           <br />    
           print(formattedName("garrett", "ellis", "david"))<br />
           print(formattedName(first = "garrett", last = "david"))<br />
@@ -277,9 +277,9 @@
       <pre>
         <code>
           def buildPerson(first, last):<br />
-	            """Returns a dictionary of information about a person"""<br />
-	            person = {"first": first, "last": last}<br />
-	            return person<br />
+	      """Returns a dictionary of information about a person"""<br />
+	      person = {"first": first, "last": last}<br />
+	      return person<br />
           <br />    
           print(buildPerson<br />("Garrett", "Ellis"))<br />
         </code>
