@@ -18,7 +18,7 @@
   </li>
   <li>
     <a href='#return-values'>Return Values</a>
-  </li> 
+  </li>
   <li>
     <a href='#returning-a-dictionary'>Returning a Dictionary</a>
   </li>    
@@ -53,8 +53,9 @@
         <pre>
           <code>
             def hello():<br />
-	            """Display a simple greeting."""<br />
-	            print("Hello!")<br />
+	              """Display a simple greeting."""<br />
+	              print("Hello!")<br />
+            <br />    
             hello()<br />
           </code>
         </pre>  
@@ -94,7 +95,8 @@
           def hello(name):<br />
               """Display a simple greeting."""<br />
               print("Hello! " + name)<br />
-              hello("Garrett")<br />
+          <br />    
+          hello("Garrett")<br />
         </code>
       </pre>  
       <details>
@@ -139,8 +141,9 @@
       <pre>
         <code>
           def hello(name, age):<br />
-	          """Display a simple greeting."""<br />
-	          print("Hello! " + name + "\nYour age: " + str(age))<br />
+	            """Display a simple greeting."""<br />
+	            print("Hello! " + name + "\nYour age: " + str(age))<br />
+          <br />    
           hello("Garrett", 20)<br />
         </code>
       </pre>  
@@ -167,10 +170,11 @@
     <ul>
       <pre>
         <code>
-          def hello(name, age):
-	          """Display a simple greeting."""
-	          print("Hello! " + name + "\nYour age: " + str(age))
-          hello(name = "Garrett", age = 20)
+          def hello(name, age):<br />
+	            """Display a simple greeting."""<br />
+	            print("Hello! " + name + "\nYour age: " + str(age))<br />
+          <br />    
+          hello(name = "Garrett", age = 20)<br />
         </code>
       </pre>  
       <details>
@@ -201,10 +205,11 @@
     <ul>
       <pre>
         <code>
-          def hello(name, age = 0):
-	          """Display a simple greeting."""
-	          print("Hello! " + name + "\nYour age: " + str(age))
-          hello(name = "Garrett")
+          def hello(name, age = 0):<br />
+	            """Display a simple greeting."""<br />
+	            print("Hello! " + name + "\nYour age: " + str(age))<br />
+          <br />    
+          hello(name = "Garrett")<br />
         </code>
       </pre>  
       <details>
@@ -235,16 +240,17 @@
     <ul>
       <pre>
         <code>
-          def formattedName(first, last, middle = " "):
-	          """Returns the formatted name"""
-	          full = " "
-	          if middle == " ":
-	              full = first + " " + last
-	          else:
-	              full = first + " " + middle + " " + last    
-	          return full.title()
-	      print(formattedName("garrett", "ellis", "david"))
-          print(formattedName(first = "garrett", last = "david"))
+          def formattedName(first, last, middle = " "):<br />
+	            """Returns the formatted name"""<br />
+	            full = " "<br />
+	            if middle == " ":<br />
+	                full = first + " " + last<br />
+	            else:<br />
+	                full = first + " " + middle + " " + last<br />    
+	            return full.title()<br />
+          <br />    
+          print(formattedName("garrett", "ellis", "david"))<br />
+          print(formattedName(first = "garrett", last = "david"))<br />
         </code>
       </pre>  
       <details>
@@ -271,9 +277,10 @@
       <pre>
         <code>
           def buildPerson(first, last):<br />
-	          """Returns a dictionary of information about a person"""<br />
-	          person = {"first": first, "last": last}<br />
-	          return person<br />
+	            """Returns a dictionary of information about a person"""<br />
+	            person = {"first": first, "last": last}<br />
+	            return person<br />
+          <br />    
           print(buildPerson<br />("Garrett", "Ellis"))<br />
         </code>
       </pre>  
@@ -308,6 +315,7 @@
               """This function prints a simple greeting to each user in the list"""<br />
               for users in usernames:<br />
                   print("Hello " + user.title() + "!")<br />
+          <br />        
           usernames = ["garrett", "sarah", "samantha"];<br />
           printUsers(usernames)<br />        
         </code>
@@ -339,6 +347,7 @@
           def makePizza(*toppings):<br />
               """This function prints a list of toppings that will go on a pizza"""<br />
               print(toppings)<br />
+          <br />    
           makePizza("cheese")<br />
           makePizza("garlic", "onions", "cheese")<br />    
         </code>
@@ -374,6 +383,7 @@
               print("Making a " + str(size) + "-inch pizza with the following toppings:)<br />
               for topping in toppings:<br />
                   print("- " + topping.title())<br />
+          <br />        
           makePizza(19, "cheese")<br />
           makePizza(20, "garlic", "onions", "cheese")<br />        
         </code>
@@ -412,6 +422,7 @@
               for key, value in userInfo.items():<br />
                   profile[key] = value<br />
               return profile<br />
+          <br />    
           userInfo = buildProfile("Garrett", "Ellis", location = "Tampa", field = "math")<br />
           print(userInfo)<br />        
         </code>
@@ -529,4 +540,4 @@
       </details>
     </ul>  
   </details>   
-</ul> 
+</ul>  
