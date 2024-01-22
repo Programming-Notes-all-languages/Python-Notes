@@ -95,26 +95,31 @@
 ## Math Operator Magic Methods
 <ul>
   <li>
-    <a>addition (+): __add__()</a>
+    <a>Here are the six comparison operator magic methods:</a>
   </li>
-  <li>
-    <a>subtraction (-): __sub__()</a>
-  </li>
-  <li>
-    <a>multiplication (*): __mul__()</a>
-  </li>
-  <li>
-    <a>division, floating point result, (/): __truediv__()</a>
-  </li>
-  <li>
-    <a>integer division (//): __floordiv__()</a>
-  </li>
-  <li>
-    <a>modulo (%): __mod__()</a>
-  </li>
-  <li>
-    <a>absolute value (Abs): __abs__()</a>
-  </li>
+  <ul>
+    <li>
+        <a>addition (+): __add__()</a>
+    </li>
+    <li>
+        <a>subtraction (-): __sub__()</a>
+    </li>
+    <li>
+        <a>multiplication (*): __mul__()</a>
+    </li>
+    <li>
+        <a>division, floating point result, (/): __truediv__()</a>
+    </li>
+    <li>
+        <a>integer division (//): __floordiv__()</a>
+    </li>
+    <li>
+        <a>modulo (%): __mod__()</a>
+    </li>
+    <li>
+        <a>absolute value (Abs): __abs__()</a>
+    </li>
+  </ul>  
   <details>
   <summary>Example Program</summary>
     <ul>
