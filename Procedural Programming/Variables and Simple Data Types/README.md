@@ -45,7 +45,10 @@
   </li>
   <li>
     <a href='precision-handling'>Precision Handling</a>
-  </li>              
+  </li>    
+  <li>
+    <a href='#mutable-and-immutable-objects'>Mutable and Immutable Objects</a>
+  </li>            
 </ol>
 </details>
 
@@ -215,7 +218,7 @@
         <code>
           firstName = "Garrett"<br />
           lastName = "Ellis"</br />
-	  fullName = firstName + " " + lastName<br />
+	        fullName = firstName + " " + lastName<br />
           print(fullName)<br />
         </code>
       </pre> 
@@ -366,3 +369,23 @@
     <a>For example, let's say that we have the following variable of type double declared, value = 0.349857.  To change the number of decimal places to, let's say, to be accurate to the hundreds place, we could use the format() function.  This function will also round this number to the specified number of decimal places.  This line of code will change the value of value to what we had previously specified: value = float"{:.2f}".format(value)</a>
   </li>
 </ul>
+
+## Mutable and Immutable Objects
+<ul>
+  <li>
+    <a>Objects that are <em>mutable</em> can have their contents altered after their initializations.  Mutable objects are like writing in pencil; the content that the pencil produces can be erased</a>
+  </li>
+  <ul>
+    <li>
+      <a>Here is a list of common mutable objects: lists, dictionaries, sets, and user-defined classes</a>
+    </li>  
+  </ul>  
+  <li>
+    <a>Objects that are <em>immutable</em> cannot have their contents altered after their initializations.  Immutable objects are like writing in Sharpie; the content that the Sharpie produces cannot be erased and is there forever.  The only way change the contents of an immutable object is to reinitialize the object with a different value</a>
+  </li>  
+  <ul>
+    <li>
+      <a>Here is a list of common immutable objects: ints, floats, bools, strings, and tuples</a>
+    </li>
+  </ul>    
+</ul>    
