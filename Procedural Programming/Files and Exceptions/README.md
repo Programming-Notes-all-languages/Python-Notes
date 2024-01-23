@@ -183,7 +183,8 @@
   <ul>
     <li>
       <a>If the file "file.txt" already exists, then the string "Hello" will be appended to the end of the file; otherwise, if the file does not exist, then Python will create an empty file called "file.txt" within the specified directory and will append "Hello" to the end of that file</a>
-  </li>   
+    </li>
+  </ul>     
 </ul>    
 
 ## Checking Existence of Files and Deleting Files
