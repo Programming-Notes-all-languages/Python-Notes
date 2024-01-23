@@ -18,6 +18,9 @@
   </li>
   <li>
     <a href='#appending-to-a-file'>Appending to a File</a>
+  </li>  
+  <li>
+    <a href='#checking-existence-of-files-and-deleting-files'>Checking Existence of Files and Deleting Files</a>
   </li>             
 </ol>
 </details>
@@ -33,7 +36,7 @@
         <pre>
           <code>
             with open("filename.txt") as fileObject:<br />
-	        contents = fileObject.read()<br />
+	            contents = fileObject.read()<br />
             print(contents)<br />
           </code>
         </pre>  
@@ -181,4 +184,51 @@
     <li>
       <a>If the file "file.txt" already exists, then the string "Hello" will be appended to the end of the file; otherwise, if the file does not exist, then Python will create an empty file called "file.txt" within the specified directory and will append "Hello" to the end of that file</a>
   </li>   
+</ul>    
+
+## Checking Existence of Files and Deleting Files
+<ul>
+  <li>
+    <a>To both check the existence of files and to delete files, you need to import the os library.  This is down by simply adding the following line of code into your program: import os</a>
+  </li>
+  <li>
+    <a>The os.path.exists() function is one possible method that can be used to make sure a file exists.  Within the parentheses goes the file's path</a>
+  </li>  
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          import os<br />
+          <br />
+          if os.path.exists("Projects/Python/Notes/main.py") == True<br />
+            print("File exists!")<br />
+        </code>
+      </pre>  
+      <details>
+      <summary>Output</summary>
+        <pre>
+          <code>
+            File exists!<br />
+          </code>
+        </pre>  
+      </details>
+    </ul>  
+  </details>
+  <li>
+    <a>After a file is created, Python can then delete it; in order to do so, the function os.remove() can be used.  The file's path then needs to be</a>
+  </li>
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          import os<br />
+          <br />
+          if os.path.exists("Projects/Python/Project14/TextFiles/text.txt"):<br />
+              os.remove("Projects/Python/Project14/TextFiles/text.txt")<br />
+        </code>
+      </pre>  
+    </ul>  
+  </details>    
 </ul>    
