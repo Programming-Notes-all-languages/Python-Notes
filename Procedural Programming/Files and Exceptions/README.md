@@ -36,7 +36,7 @@
         <pre>
           <code>
             with open("filename.txt") as fileObject:<br />
-	            contents = fileObject.read()<br />
+	        contents = fileObject.read()<br />
             print(contents)<br />
           </code>
         </pre>  
