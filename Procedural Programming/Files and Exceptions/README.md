@@ -67,7 +67,7 @@
           print(newList)<br />
         </code>
       </pre>    
-      </details>
+      <details>
       <summary>Output</summary>
         <pre>
           <code>
