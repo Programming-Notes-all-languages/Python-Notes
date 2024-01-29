@@ -36,7 +36,7 @@
         <pre>
           <code>
             with open("filename.txt") as fileObject:<br />
-	        contents = fileObject.read()<br />
+	            contents = fileObject.read()<br />
             print(contents)<br />
           </code>
         </pre>  
@@ -49,6 +49,45 @@
     <li>
       <a>After an object that represents the file's contents has been created, the read() method can then be used to read all the contents of the file and then stores all of the file's contents into one large string</a>
   </ul>
+  <li>
+    <a>The .split() method is useful when reading in a file's content into a long string, and then splitting that string up into a list of smaller substrings based on a user chosen separator</a>
+  </li>
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          content = ""<br />
+          newList = []<br />
+          <br />
+          with open("text.txt") as f:<br />
+              content = f.read()<br />
+          <br />
+          newList = content.split("\n")<br />
+          print(newList)<br />
+        </code>
+      </pre>    
+      </details>
+      <summary>Output</summary>
+        <pre>
+          <code>
+            ['File content', 'is printed', 'like this', 'to the screen']<br />
+          </code>
+        </pre>  
+      </details> 
+    </ul>  
+  </details>
+  <li>
+    <a>The split() method can take in a maximum of two arguments; both arguments are optional, however</a>
+  </li>    
+  <ul>
+    <li>
+      <a>The first parameter of type string specifies which substring of the object the compiler needs to look for.  This substring delineates when the substring's last character index ends and when a new element of the newly initialized list of type string begins.  This pattern goes on throughout the entire length of the initial string, unless there is another argument provided in the method's call</a>
+    </li>
+    <li>
+      <a>The second argument determines the maximum number of splits allowed.  By omitting this argument, Python allows for an infinite number of splits; however, by passing in any integer value, let's say one, then only one split can happen, if the first substring is to be found within the larger string.  If this is the case, the list will only contain two elements, despite the possibility of there being more occurrences of the first argument's string</a>
+    </li>
+  </ul>    
 </ul>  
 
 ## File Paths
