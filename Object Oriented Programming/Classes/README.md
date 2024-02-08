@@ -2,87 +2,250 @@
 <summary>Table of Contents</summary>
 <ol>
   <li>
-    <a href='#inheritance-in-object-oriented-programming'>Inheritance in Object-Oriented Programming</a>
+    <a href='#writing-a-class-in-python'>Writing a Class in Python</a>
   </li>
   <li>
-    <a href='#implementing-inheritance'>Implementing Inheritance</a>
-  </li>   
+    <a href='#instance-methods,-static-methods,-and-class-methods'>Instance Methods, Static Methods, and Class Methods</a>
+  </li>
   <li>
-    <a href='#abstract-classes-and-methods'>Abstract Classes and Methods</a>  
-  </li>      
+    <a href='#difference-between-functions-and-methods'>Difference between Functions and Methods</a>
+  </li>  
+  <li>
+    <a href='#creating-and-calling-objects-from-a-class'>Creating and Calling Objects from a Class</a>
+  </li> 
+  <li>
+    <a href='#passing-arguments-to-a-method'>Passing Arguments to a Method</a>
+  </li>
+  <li>
+    <a href='#initialization-parameters'>Initialization Parameters</a>
+  </li>             
 </ol>
 </details>
 
-## Inheritance in Object-Oriented Programming
+## Writing a Class in Python
 <ul>
   <li>
-    <a>Inheritance is an object-oriented programming principle than enables the programmer to build on an already existing class.  This is a very useful concept in programs that are very large.  There is often the need to build a class that is very similar to an already existing class, but this one has additional features.  Inheritance is the simple answer in achieving this task.  The principle of inheritance is basically the creation of a new class that includes all methods and variables within the base class, but adds additional functionality</a>
+    <a>You first begin a <em>class</em> definition with the class keyword.  Following the class keyword comes the name of the class which is defined by the user.  The convention for naming a class is that the class' name begins with an uppercase character.  After the name of the class, a set of parenthesis can follow, but that is optional.  The statement must then end with a colon, which indicates to Python that the beginning of the class' body is about to commence</a>
   </li>
   <li>
-    <a>When talking about inheritance, the classes being referred to are often called base classes and subclasses</a>
+    <a>All the methods and class variables that are a part of the class must be indented.  The indentation with a class is the same as the indentation with conditional statements and functions in Python</a>
   </li>  
-  <ul>
-    <li>
-      <a>The <em>base class</em> is the class in which other classes inherit from.  It is essentially the starting point of subclasses</a>
-    </li>
-    <li>
-      <a>The <em>subclass</em> is the class that is inheriting from another class, called the base class.  The sub class adds additional functionality to the base class, without actually modifying the base class</a>
-    </li>  
-  </ul>   
   <li>
-    <a>Methods within the subclass can redefine methods defined within the base class.  In other words, methods within the subclass can exists that have the same name as those methods within the base class, but have different functionality.  This process is called <em>overriding</em>.  When an overridden method is called, its implementation as defined by the subclass is carried out</a>
-  </li>  
-</ul>     
+    <a>Within the body of the class lies many functions; however, in Python, any function defined within a class is given a special name, a <em>method</em></a>
+  </li>
+  <li>
+    <a>The first method within every single class should be called __init__().  Whenever a class is instantiated, meaning an object of the class is created, this method will always run.  The name __init__ is reserved by Python to be a constructor for a class</a>
+  </li>    
+  <li>
+    <a>Methods can have multiple types of variables, including: local variables, instance variables, and class variables</a>
+    <ul>
+      <li>
+        <a><em>Local variables</em> are variables that do not start with self.  A local variable is not an attribute of a class, and is only alive throughout the duration of the method.  Once the method exits, the local variable is gone</a>
+      </li>
+      <li>
+        <a><em>Instance variables</em> are variables that have an object scope, meaning that they are accessible to all methods within the class</a>  
+      </li>
+      <li>
+        <a><em>Class variables</em> are variables that are shared by every instance of the same class.  These variables are defined within the class, but outside of any method</a>
+      </li>
+    </ul>      
+  </li>
+  <li>
+    <a>Each object, also known as an instantiation of a class, has its own set of instance variables.  These instance variables are not shared amongst other instances of the class</a>  
+  </li>
+</ul>    
 
-## Implementing Inheritance
+## Instance Methods, Static Methods, and Class Methods
 <ul>
   <li>
-    <a>Python's syntax regarding inheritance is simple.  The base class does not need to know which classes within a project are its subclasses--only subclasses need to say which class is its base class.  Here is the syntax for two classes, one called Base and one called Subclass, where Subclass inherits all of the properties from Base:</a>
+    <a>Instance methods are methods that perform actions on instance variables.  Instance methods also need the keyword self in them.  Instance methods:</a>
+    <ul>
+      <li>
+        <a>Are bound to the instance of the class</a>
+      </li>
+      <li>
+        <a>Can modify an instance of a class</a>
+      </li>
+      <li>
+        <a>Can both access and modify any instance and class variables</a>
+      </li>    
+    </ul>    
   </li>
-  <details>
-  <summary>Example Program</summary>
-    <pre>
-      <code>
-        class Base():<br />
-            #methods<br />
-        class Subclass(Base):<br />
-            #methods<br />  
-      </code>
-    </pre> 
-  </details>
-  <ul>
-    <li>
-      <a>Within the subclass' statement inside of the parentheses goes the name of the class in which it is inheriting from.  In this case, the name Base goes within the parentheses</a>
-    </li>
-  </ul>    
-  <li>
-    <a>The super() function is a predefined Python function that will make the subclass inherit a method's implementation from its base class</a>
-  </li> 
   <details>
   <summary>Example Program</summary>
     <ul>
       <pre>
         <code>
-          class Employee:<br />
-              def __init__(self, name, title, salary):<br />
-                  self.__name = name<br />
-                  self.__title = title<br />
-                  self.__salary = salary<br />
-              def printEmployee(self):<br />
-                  print("Name: " + self.__name)<br />
-                  print("Title: " + self.__title) <br />
-                  print("Salary: $" + str(self.__salary))<br />
-          <br />      
-          class Developer(Employee):<br />
-              def __init__(self, name, title, salary, language):<br />
-                  super().__init__(name, title, salary)<br />
-                  self.__language = language<br />
-              def printEmployee(self):<br />
-                  super().printEmployee()<br />
-                  print("Language: " + self.__language)<br />
-          <br />      
-          dev1 = Developer("Garrett", "Special Developer", 100000, "Python")<br />
-          dev1.printEmployee()<br />           
+          class Calculator:<br /> 
+              def __init__(self, version):<br /> 
+                  self.version = version<br /> 
+              <br />     
+              def description(self):<br /> 
+                  print("The current version of the calculator is: " + str(self.version))<br /> 
+              <br /> 
+          calc1 = Calculator(1)<br /> 
+          calc2 = Calculator(2)<br /> 
+          <br />  
+          calc1.description()<br /> 
+          calc2.description()<br /> 
+        </code>
+      </pre>  
+      <details>
+      <summary>Output</summary>
+        <pre>
+          <code>
+            {'color': 'green'}<br />
+            {'color': 'green', 'name': 'Garrett'}<br />
+          </code>
+        </pre>  
+      </details>
+    </ul>  
+  </details>  
+  <li>
+    <a>Class methods are methods that call on the class itself rather than an instance of the class.  Class methods use the keyword cls instead of the keyword self like in instance methods.  Class methods:</a> 
+  </li>
+  <ul>
+    <li>
+      <a>Are bound to the class in which the method is defined under</a>
+    </li>
+    <li>
+      <a>Can modify the state of the class</a>
+    </li>
+    <li>
+      <a>Can only access class variables--not instance variables</a>
+    </li>
+    <li>
+      <a>Use the class method decorator, @classmethod, to define a class method</a>
+    </li>  
+  </ul>
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          class Calculator:<br />
+              mode = 1<br />
+              <br />
+              @classmethod<br />
+              def incrementMode(cls):<br />
+                  cls.mode += 1<br />
+              <br />
+              @classmethod<br />
+              def printMode(cls):<br />
+                  print("Mode: " + str(cls.mode))<br />
+          <br />
+          Calculator.incrementMode()<br />
+          Calculator.printMode()<br />
+        </code>
+      </pre>  
+      <details>
+      <summary>Output</summary>
+        <pre>
+          <code>
+            Mode: 2<br />
+          </code>
+        </pre>  
+      </details>
+    </ul>  
+  </details> 
+  <li>
+    <a>Static methods are methods that do not have access to both class variables and instance variables.  Static variables:</a>  
+  </li>
+  <ul>
+    <li>
+      <a>Are bound to the class</a>
+    </li>
+    <li>
+      <a>Cannot modify any of the class or instance variables</a>
+    </li>
+    <li>
+      <a>Cannot change the state of a class or instance of a class</a>
+    </li>
+    <li>
+      <a>Use the static method decorator, @staticmethod, to define a static method</a>
+    </li>  
+  </ul>
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          class Calculator:<br />
+              @staticmethod<br />
+              def printMessage():<br />
+                  print("Hello!")<br />
+          <br />
+          Calculator.printMessage()<br />
+        </code>
+      </pre>  
+      <details>
+      <summary>Output</summary>
+        <pre>
+          <code>
+            Hello!<br />
+          </code>
+        </pre>  
+      </details>
+    </ul>  
+  </details>                  
+</ul> 
+
+## Differences between Functions and Methods
+<ul>
+  <li>
+    <a>Here are the two key differences between functions and methods in Python:</a>
+  </li>
+  <ul>
+    <li>
+      <a>Every single method of a class must be indented with a tab after the statement which contains the keyword class and the name of the class defined by the user</a>
+    </li>
+    <li>
+      <a>All methods, except for static methods, have a special first parameter within the method's definition.  By convention, the special parameter's name for instance methods is self and the special parameter's name for class methods is cls</a>
+    </li>  
+  </ul>
+</ul>   
+
+## Creating and Calling Objects from a Class
+<ul>
+  <li>
+    <a>To use a class in most cases, you will have to create an instance of a class.  This is only true, however, for instance methods.  Class and static methods are bound to a class, not an instance of a class.  To instantiate a class, you use the assignment operator and include a statement like this into your program: object = className(argumentsIfAny)</a>
+  </li>
+  <li>
+    <a>After the creation of an object, to then call a method from that instance's class, you would use the generic syntax as follows: objectName.methodName(argumentsIfAny)</a>
+  </li>
+  <li>
+    <a>One of the main features of object-oriented programming is that you can instantiate an infinite number of objects from a single class</a>
+  </li>  
+</ul>
+
+## Passing Arguments to a Method
+<ul>
+  <li>
+    <a>When calling any function, the number of arguments must match the number of parameters in the function's parameter list.  The same rule applies for methods too; however, some methods like instance and class methods will appear to have one extra parameter in their parameter list</a>
+  </li>
+</ul>  
+
+## Initialization Parameters
+<ul>
+  <li>
+    <a>Passing arguments to a method also works when instantiating a class.  Oftentimes, a class' constructor will have multiple parameters; therefore, when creating an instance of a class, the constructor's call will need to match the number of arguments as defined within the class</a>
+  </li>
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          class Person:<br />
+              def __init__(self, name, age, sex):<br />
+              self.name = name<br />
+              self.age = age<br />
+              self.sex = sex<br />
+              <br />
+              def print(self):<br />
+                  print("Name: " + self.name + "\nAge: " + str(self.age) + "\nSex: " + self.sex)<br />    
+          <br />
+          person1 = Person("Garrett", 20, "male")<br />
+          person1.print()<br />
         </code>
       </pre>  
       <details>
@@ -90,72 +253,11 @@
         <pre>
           <code>
             Name: Garrett<br />
-            Title: Special Developer<br />
-            Salary: $100000<br />
-            Language: Python<br />
+            Age: 20<br />
+            Sex: male<br />
           </code>
         </pre>  
       </details>
     </ul>  
-  </details> 
-</ul>    
-
-## Abstract Classes and Methods
-<ul>
-  <li>
-    <a>An <em>abstract class</em> is a class that is not meant to be initialized, and actually cannot be initialized, rather serve as a base class for subclasses</a>
-  </li>
-  <li>
-    <a>An <em>abstract method</em> is a method that will always be overridden by a method with the same name within the subclasses
-  </li>
-  <li>
-    <a>To make an abstract class, you need to include the following statement at the beginning of the file containing the class' definition: from abc import ABC.  Then, within the first line of the class' definition, the string, ABC, needs to be placed within parentheses following the class' name</a>
-  </li>
-  <li>
-    <a>To make a method an abstract method, it most be preceded by the @abstractmethod decorator.  With the abstract method decorator, abstractmethod also needs to imported from abc (notice how this is different from and class and static methods)</a> 
-  </li>
-  <details>
-  <summary>Example Program</summary>
-    <ul>
-      <pre>
-        <code>
-          from abc import ABC, abstractmethod<br />
-          class Vehicle(ABC):<br />
-              def __init__(self, name, numWheels):<br />
-                  self.__name = name<br />
-                  self.__numWheels = numWheels<br />
-              def getName(self):<br />
-                  return self.__name<br />
-              <br />    
-              def getNumWheels(self):<br />
-                  return self.__numWheels<br />
-              @abstractmethod<br />
-              def printData(self):<br />
-                  pass<br />
-          <br />
-          class Car(Vehicle):<br />
-              def __init__(self, name, numWheels, driver):<br />
-                  super().__init__(name, numWheels)<br />
-                  self.__driver = driver<br />
-              def printData(self):<br />
-                  print("Name: " + super().getName())<br />
-                  print("Number of wheels: " + str(super(). getNumWheels()))<br />
-                  print("Driver: " + self.__driver)<br /> 
-          <br />
-          car1 = Car("Hyundai", 4, "Garrett")<br />
-          car1.printData()<br />               
-        </code>
-      </pre>  
-      <details>
-      <summary>Output</summary>
-        <pre>
-          <code>
-            Name: Hyundai<br />
-            Number of wheels: 4<br />
-            Driver: Garrett<br />
-          </code>
-        </pre>  
-      </details>
-    </ul>  
-  </details>      
+  </details>
 </ul>    
