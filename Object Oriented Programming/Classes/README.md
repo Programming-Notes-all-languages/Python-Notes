@@ -65,21 +65,21 @@
         <code>
           class Employee:<br />
               def __init__(self, name, title, salary):<br />
-                self.__name = name<br />
-                self.__title = title<br />
-                self.__salary = salary<br />
+                  self.__name = name<br />
+                  self.__title = title<br />
+                  self.__salary = salary<br />
               def printEmployee(self):<br />
-                print("Name: " + self.__name)<br />
-                print("Title: " + self.__title) <br />
-                print("Salary: $" + str(self.__salary))<br />
+                  print("Name: " + self.__name)<br />
+                  print("Title: " + self.__title) <br />
+                  print("Salary: $" + str(self.__salary))<br />
           <br />      
           class Developer(Employee):<br />
               def __init__(self, name, title, salary, language):<br />
-                super().__init__(name, title, salary)<br />
-                self.__language = language<br />
+                  super().__init__(name, title, salary)<br />
+                  self.__language = language<br />
               def printEmployee(self):<br />
-                super().printEmployee()<br />
-                print("Language: " + self.__language)<br />
+                  super().printEmployee()<br />
+                  print("Language: " + self.__language)<br />
           <br />      
           dev1 = Developer("Garrett", "Special Developer", 100000, "Python")<br />
           dev1.printEmployee()<br />           
@@ -122,25 +122,25 @@
           from abc import ABC, abstractmethod<br />
           class Vehicle(ABC):<br />
               def __init__(self, name, numWheels):<br />
-                self.__name = name<br />
-                self.__numWheels = numWheels<br />
+                  self.__name = name<br />
+                  self.__numWheels = numWheels<br />
               def getName(self):<br />
-                return self.__name<br />
+                  return self.__name<br />
               <br />    
               def getNumWheels(self):<br />
-                return self.__numWheels<br />
+                  return self.__numWheels<br />
               @abstractmethod<br />
               def printData(self):<br />
-                 pass<br />
+                  pass<br />
           <br />
           class Car(Vehicle):<br />
               def __init__(self, name, numWheels, driver):<br />
-                super().__init__(name, numWheels)<br />
-                self.__driver = driver<br />
+                  super().__init__(name, numWheels)<br />
+                  self.__driver = driver<br />
               def printData(self):<br />
-                print("Name: " + super().getName())<br />
-                print("Number of wheels: " + str(super(). getNumWheels()))<br />
-                print("Driver: " + self.__driver)<br /> 
+                  print("Name: " + super().getName())<br />
+                  print("Number of wheels: " + str(super(). getNumWheels()))<br />
+                  print("Driver: " + self.__driver)<br /> 
           <br />
           car1 = Car("Hyundai", 4, "Garrett")<br />
           car1.printData()<br />               
