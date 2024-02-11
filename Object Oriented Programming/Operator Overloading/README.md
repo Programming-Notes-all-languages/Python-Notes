@@ -36,7 +36,7 @@
       <a>less than (<): __lt__()</a> 
     </li>
     <li>
-      <a>greater than (<): __gt__()</a> 
+      <a>greater than (>): __gt__()</a> 
     </li>
     <li>
       <a>less than or equal to (<=): __le__()</a>
