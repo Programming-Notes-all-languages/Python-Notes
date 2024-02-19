@@ -180,10 +180,10 @@
         <pre>
           <code>
             Summation of v1 and v2: (46, -54, 9)<br />
-		        Subtracting v2 and v1: (44, -58, 3)<br />
+	    Subtracting v2 and v1: (44, -58, 3)<br />
             Multiplication of v1 and v2: (45, -112, 18)<br />
-		        Division of v2 by v1: (45.0, -28.0, 2.0)<br />
-		        Modulus of v2 by v1: (0, 0, 0)<br />
+	    Division of v2 by v1: (45.0, -28.0, 2.0)<br />
+	    Modulus of v2 by v1: (0, 0, 0)<br />
             Absolute value of v2: (45, 56, 6)<br />
           </code>
         </pre>  
