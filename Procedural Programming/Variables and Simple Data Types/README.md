@@ -2,56 +2,44 @@
 <summary>Table of Contents</summary>
 <ol>
   <li>
-    <a href='#variables'>Variables</a>
+    <a href='#comments'>Comments</a>
+  </li>
+  <li>
+    <a href='#variable-assignment-and-initialization'>Variable Assignment and Initialization</a>
   </li>
   <li>
     <a href='#naming-and-using-variables'>Naming and Using Variables</a>
-  </li>
-  <li>
-    <a href='#strings'>Strings</a>
   </li>  
   <li>
-    <a href='#arithmetic-operators'>Arithmetic Operators</a>
+    <a href='#whitespace-and-basic-formatting'>Whitespace and Basic Formatting</a>
   </li>
   <li>
-    <a href='#changing-case-in-a-string-with-methods'>Changing Case in a String with Methods</a>
+    <a href='#introduction-to-literals-and-operators'>Introduction to Literals and Operators</a>
   </li> 
   <li>
-    <a href='#combining-or-concatenating-strings'>Combining or Concatenating Strings</a>
-  </li>
-  <li>
-    <a href='#adding-and-stripping-whitespace-to-strings-with-tabs-or-newlines'>Adding and Stripping Whitespace to Strings with Tabs or Newlines</a>
-  </li>   
-  <li>
-    <a href='#integers'>Integers</a>
-  </li>
-  <li>
-    <a href='floats'>Floats</a>
-  </li>
-  <li>
-    <a href='#boolean'>Boolean</a>
-  </li>
-  <li>
-    <a href='#modulo-operator'>Modulo Operator</a>
+    <a href='#atomic-data-types-and-type-conversion'>Atomic Data Types and Type Conversion</a>
   </li>
   <li>
     <a href='#avoiding-type-errors-with-the-str-function'>Avoiding Type Errors with the str Function</a>
-  </li> 
-  <li>
-    <a href='#comments'>Comments</a>
   </li>   
   <li>
     <a href='#getting-user-input'>Getting User Input</a>
   </li>
   <li>
-    <a href='#constant-variables'>Constant Variables</a>
+    <a href='constant-variables'>Constant Variables</a>
   </li>
   <li>
-    <a href='precision-handling'>Precision Handling</a>
-  </li>    
+    <a href='#precision-handling'>Precision Handling</a>
+  </li>   
   <li>
-    <a href='#mutable-and-immutable-objects'>Mutable and Immutable Objects</a>
-  </li>            
+    <a href='#escape-sequences'>Escape Sequences</a>
+  </li> 
+  <li>
+    <a href='#arithmetic-operators'>Arithmetic Operators</a>
+  </li>  
+  <li>
+    <a href='#shorthand-assignment-operators'>Shorthand Assignment Operators</a>
+  </li>      
 </ol>
 </details>
    
@@ -62,10 +50,10 @@
     <a><em>Comments</em> are notes created by the programmer that are included within the program. The compiler ignores these comments as they are only there for the programmer's use</a>
   </li>
   <li>
-    <a>In Python there are two styles of comments:</a>
+    <a>In Python, there are two styles of comments:</a>
     <ul>
       <li>
-        <a><em>Single-line comments</em></span>: are denoted with the hash mark, #, and tells the compiler to ignore all code from the hash mark to the end of the line of code</a>
+        <a><em>Single-line comments</em></span>: are denoted with the hash mark, #, and tell the compiler to ignore all code from the hash mark to the end of the line of code</a>
       </li>
       <details>
       <summary>Example Program</summary>
@@ -204,7 +192,7 @@
 ## Atomic Data Types and Type Conversion
 <ul>
   <li>
-    <a>Objects that are <em>mutable</em> can have their contents altered after their initializations.  Mutable objects are like writing in pencil; the content that the pencil produces can be erased</a>
+    <a>Objects that are <em>mutable</em> can have their contents altered after their initializations. Mutable objects are like writing in pencil; the content that the pencil produces can be erased</a>
   </li>
   <ul>
     <li>
@@ -212,7 +200,7 @@
     </li>  
   </ul>  
   <li>
-    <a>Objects that are <em>immutable</em> cannot have their contents altered after their initializations.  Immutable objects are like writing in Sharpie; the content that the Sharpie produces cannot be erased and is there forever.  The only way change the contents of an immutable object is to reinitialize the object with a different value</a>
+    <a>Objects that are <em>immutable</em> cannot have their contents altered after their initializations. Immutable objects are like writing in Sharpie; the content that the Sharpie produces cannot be erased and is there forever. The only way to change the contents of an immutable object is to reinitialize the object with a different value</a>
   </li>  
   <ul>
     <li>
@@ -273,58 +261,38 @@
     <a>Sequence types:</a>
     <ul>
       <li>
-        <a><em>list</em>: more information on lists can be found [here](https://github.com/Programming-Notes-all-languages/Python-Notes/tree/main/Procedural%20Programming/Introducing%20Lists)</a>
+        <a><em>list</em>: more information on lists can be found </a><a href="https://github.com/Programming-Notes-all-languages/Python-Notes/tree/main/Procedural%20Programming/Variables%20and%20Simple%20Data%20Types">here</a>
       </li>
-    </ul>    
-  <li>
-    <a>SMALLEST --- char << int << float << double --- GREATEST</a> 
-    <ul>
       <li>
-        <a>One can store a smaller data type in a larger data type. For example, you can store an int in a float or a double</a>
+        <a><em>tuple</em>: more information on tuples can be found </a><a href="https://github.com/Programming-Notes-all-languages/Python-Notes/tree/main/Procedural%20Programming/Variables%20and%20Simple%20Data%20Types">here</a>
       </li>
-    </ul>     
-  </li>  
+      <li>
+        <a><em>dictionary</em>: more information on dictionaries can be found </a><a href="https://github.com/Programming-Notes-all-languages/Python-Notes/tree/main/Procedural%20Programming/Dictionaries">here</a> 
+      </li>  
+    </ul>    
   <li>
     <a>Type conversion:</a>
     <ul>
       <li>
-        <a>Can use variable = dataType(variable); to change the variable's type to dataType</a>
+        <a>Can use variable = dataType(variable) to change the variable's type to dataType</a>
       </li>
       <li>
-        <a>Can also use variable = static_cast</a><a><</a><a>dataType</a><a>></a><a>; to change variable type to dataType</a>
-      </li>
-      <li>
-        <a>Converting any char into another type returns that value's ASCII value</a>
-      </li>  
-      <li>
-        <a>Examples of type conversion:</a>
         <details>
         <summary>Example Program</summary>
           <ul>
             <pre>
               <code>
-                #include <iostream>
-                using namespace std;
+                number = 55
+                strNumber = str(55)
                 <br />
-                int main()
-                {
-                &emsp;&emsp;double x = 1.1, y = 7.2;
-                &emsp;&emsp;x = int(x);
-                <br />
-                &emsp;&emsp;cout << "The value of x is: " << x << '\n';
-                &emsp;&emsp;y = static_cast<int>(y);
-                &emsp;&emsp;cout << "The value of y is: " << y << '\n';
-                <br />
-                &emsp;&emsp;return 0;
-                }
+                print("The string value of " + str(number) + " is " + strNumber)
               </code>
             </pre>  
             <details>
             <summary>Output</summary>
               <pre>
                 <code>
-                  The value of x is: 1
-                  The value of y is: 7
+                  The string value of 55 is 55
                 </code>
               </pre>  
             </details>
@@ -333,172 +301,22 @@
       </li>  
     </ul>
   </li>                 
-</ul>
-
-## Changing Case in a String with Methods
-<ul>
-  <li>
-    <a>One of the most simple things one can do with a string is to change the case of some or all of the characters within the string</a>
-  </li>
-  <li>
-    <a>A <em>method</em> is an action that Python takes upon itself to perform a task.  The dot operator, simply a dot (.), that is placed after a variable name tells Python to make the method following the dot to act on the variable preceding the dot</a>  
-    <ul>
-      <li>
-        <a>Every method is followed by an opened and a closed parenthesis set such as the following: name.title()</a>
-      </li>
-    </ul>
-  <li>
-    <a>The title() method changes a string so that each character following a white space is uppercase</a>
-  </li>  
-  <li>
-    <a>The lower() method changes every character within the string preceding the dot to be lowercase</a>
-  </li>
-  <li>
-    <a>The upper() method changes every character within the string preceding the dot to be uppercase</a>  
-  </li>      
-  <details>
-  <summary>Example Program</summary>
-    <ul>
-      <pre>
-        <code>
-          message = "hello world"
-          print(message)
-          message = message.upper()
-          print(message)
-          message = "hello"
-          print(message)
-        </code>
-      </pre>  
-      <details>
-      <summary>Output</summary>
-        <pre>
-          <code>
-          hello world
-          HELLO WORLD
-          hello
-          </code>
-        </pre>  
-      </details>
-    </ul>  
-  </details>
-  <li>
-    <a>To tell Python to not start with a new line after using a print statement, you can do the following: print(variable/string, end = "x")</a>
-    <ul>
-      <li>
-        <a>In this example, we are printing a string or a variable to a string.  Instead of the compiler printing the code beneath this statement on a new line, we tell the compiler to print the statements underneath this statements based on what x is</a> 
-      </li> 
-      <li> 
-        <a>x is a string that can be anything you would like it to be</a>
-      </li> 
-    </ul>   
-  </li> 
-  <li>
-    <a>Various string constants are made available in Python within the string library.  To add this library, simply add this line of code to your program: import string</a>
-  </li>
-  <li>
-    <a>Here are a few pre-initialized strings that are made available by the string library in Python:</a>
-  </li>  
-  <ul>
-    <li>
-      <a>string.ascii_lowercase: is the following string: "abcdefghijklmnopqrstuvwxyz"</a>
-    </li> 
-    <li>
-      <a>string.ascii.uppercase: is the following string: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"</a>
-    </li>  
-    <li>
-      <a>string.ascii.letters: is the concatenation of string.ascii_lowercase and string.ascii_uppercase</a>
-    </li>
-    <li>
-      <a>string.digits: is the following string: "0123456789"</a>
-    </li>
-    <li>
-      <a>string.punctuation is the following string: "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"</a> 
-    </li>  
-  </ul>
-</ul>   
-
-## Combining or Concatenating Strings
-<ul>
-  <li>
-    <a>Python uses the plus symbol to combine strings</a>
-  </li>
-  <details>
-  <summary>Example Program</summary>
-    <ul>
-      <pre>
-        <code>
-          firstName = "Garrett"<br />
-          lastName = "Ellis"</br />
-	        fullName = firstName + " " + lastName<br />
-          print(fullName)<br />
-        </code>
-      </pre> 
-      <details>
-      <summary>Output</summary>
-        <pre>
-          <code>
-            Garrett Ellis
-          </code>
-        </pre>     
-      </details>
-    </ul>  
-  </details> 
 </ul>    
-
-## Adding and Stripping Whitespace to Strings with Tabs or Newlines
-<ul>
-  <li>
-    <a>In programming, whitespace refers to a singular character or a string of characters that represent space.  Whitespace characters are not visibly marked, but they do take up space and memory</a>
-  </li>
-  <li>
-    <a>To add a tab to your text, use \t</a>
-  </li>
-  <li>
-    <a>To add a newline to a string, use \n</a>
-  </li>      
-  <li>
-    <a>Python has methods that can look for extra whitespace characters at the beginning and the end of a string and will remove those characters.  Here are the three methods:</a>
-  </li>
-  <ul>
-    <li>
-      <a>To make sure that no whitespace characters exists on the right end of a string, use the rstrip() method</a>  
-    </li>  
-    <li>
-      <a>To make sure that no whitespace characters exists on the left end of a string, use the lstrip() method</a>
-    </li>  
-    <li>
-      <a>To strip any and all whitespace characters from the left and right ends of a string, use the strip() method</a>
-    </li>  
-  </ul>  
-</ul>  
-
-## Modulo Operator
-<ul>
-  <li>
-    <a>A useful tool for working with numerical information is the <em>modulo operator</em></a>
-  </li>
-  <li>
-    <a>The modulo operator is a tool that is used to find the remainder producing by dividing one number by another number</a>
-  </li>
-  <li>
-    <a>For example, let's say that we have the following declaration for a variable named value, value = 4 % 3.  The variable called value is equal to one, because four divided by three has a remainder of one</a> 
-  </li>
-</ul>       
 
 ## Avoiding Type Errors with the str Function
 <ul>
   <li>
-    <a>Type errors indicate that Python cannot recognize the kind of information that you are using</a>
+    <a>Type errors indicate that Python cannot recognize some type of information. An example of this is in Python's print() function which only works when all of the contents embedded within the function are of the same data type</a>
   </li>
   <li>
-    <a>For example, let's say you have the following line of code in your program: message = "Happy " + age + "rd Birthday!".  Let's also say that age is a variable of type integer which holds the value three.  Here, Python does not know if the variable age should represent the integer value three, or if age should represent the string three.  Because of this, uncertainty, Python throws an error at us when the program is run</a>
+    <a>For example, let's say a program tries to print the following using the print() function: "Happy " + age + "rd Birthday!". Let's also say that age is a variable of type int, storing the integer three. Here, Python does not know if the variable age should represent the integer value three, or if age should represent the string three. Because of this, uncertainty, Python throws out an error when the program runs</a>
   </li>  
   <ul>
     <li>
-      <a>To fix this error, you can wrap the age variable in the str() function.  You would then write the following line of code: message = "Happy " + str(age) + "rd Birthday!", and you would get the expected output: Happy 3rd birthday!
+      <a>To fix this error, the conversion of age from a variable of type int to a variable of type str is necessary. print("Happy " + str(age) + "rd Birthday!") now works as intended and the compiler prints the following message to the screen: Happy 3rd birthday!
     </li>
     <li> 
-      <a>what this str() function does above is that it temporarily changes the variable type of age from an integer to a variable of type string</a>
+      <a>what this str() function does above is that it temporarily changes the variable type of age from an integer to a variable of type string. After this line of code, the age's variable type returns to int. To permanently change age's variable type to str, the following line of code can be written: age = str(age)</a>
     </li>
   </ul>    
 </ul>  
@@ -509,17 +327,17 @@
     <a>To get user input, you need to use the input() function which is already pre-defined by Python</a>
   </li>
   <li>
-    <a>For example, let's say that we want the user to enter a message into the terminal and then we were to store this message into a variable called message.  This could be accomplished by doing the following: message = input("Enter in a message: ").  It is important to note that the variable message will store a string</a>
+    <a>For example, let's say that we want the user to enter a message into the terminal and then we were to store this message into a variable called message. This could be accomplished by doing the following: message = input("Enter in a message: "). It is important to note that the variable message will store a string</a>
   </li>
   <li>
-    <a>If you would like to get an input and store that input into a variable of a type other than string, then you could do the following: value = int(input("Enter in a message: ")).  Now, instead of the variable value being initialized as a variable of type string, now the variable is of type integer</a>
+    <a>If you would like to get an input and store that input into a variable of a type other than string, then you could do the following: value = int(input("Enter in a message: ")). Now, instead of the variable value being initialized as a variable of type string, the variable is of type integer</a>
   </li>
 </ul>
 
 ## Constant Variables
 <ul>
   <li>
-    <a>A constant variable is a variable value which cannot be changed throughout the compilation of the program.  To do this, create a separate Python file which can be called anything, but is conventionally called constant.py.  In this file, declare and initialize the variables and in the main.py file, insert import constant at the beginning of the program.  Now, those variables that you declared in constant.py can be accessed in main.py, and their values cannot be changed</a>
+    <a>A constant variable is a variable value that cannot be changed throughout the compilation of the program. To do this, create a separate Python file which can be called anything, but is conventionally called constant.py. In this file, declare and initialize the variables and in the main.py file, insert import constant at the beginning of the program. Now, those variables that you assigned in constant.py can be accessed in main.py and their values cannot be changed</a>
   </li>
 </ul>
 
@@ -529,6 +347,187 @@
     <a>The format() function is used to change the number of decimal places that a variable contains temporarily</a>
   </li>
   <li>
-    <a>For example, let's say that we have the following variable of type double declared, value = 0.349857.  To change the number of decimal places to, let's say, to be accurate to the hundreds place, we could use the format() function.  This function will also round this number to the specified number of decimal places.  This line of code will change the value of value to what we had previously specified: value = float"{:.2f}".format(value)</a>
+    <a>The format() function takes in either a literal or an identifier and rounds that value to the number of decimal spaces defined following conventional rounding conventions</a>
   </li>
+  <details>
+  <summary>Example Program</summary>
+    <ul>
+      <pre>
+        <code>
+          #variable assignment
+          a = 1234.56
+          <br />
+          #printing out rounded a, accurate to the tenths place
+          print("{:.1f}".format(1.3434))
+        </code>
+      </pre>  
+      <details>
+      <summary>Output</summary>
+        <pre>
+          <code>
+            1.3
+          </code>
+        </pre>  
+      </details>
+    </ul>  
+  </details>
 </ul> 
+
+## Escape Sequences
+<ul>
+  <li>
+    <a>The backslash \ is the indicator of an escape sequence</a>
+  </li>
+  <li>
+    <a>Some of the common escape sequences are listed below:</a>
+    <ul>
+      <li>
+        <a>\n: newline</a>
+      </li>
+      <li>
+        <a>\t: tab</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+## Arithmetic Operators
+<ul>
+  <li>
+    <a><em>Addition operator</em>: adds the value on the left-hand side of the operator to the value on the right-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x + y #sums the values x and y</a>
+      </li>
+    </ul>    
+  </li>
+  <li>
+    <a><em>Subtraction operator</em>: subtracts the value on the right-hand side of the operator from the value on the left-hand side of the operator</a> 
+    <ul>
+      <li>
+        <a>x - y #subtracts the value y from the value x</a>
+      </li>
+    </ul>    
+  </li>
+  <li>
+    <a><em>Multiplication operator</em>: multiplies the value on the right-hand side of the operator to the value on the left-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x * y #multiplies the values x and y</a>
+      </li>
+    </ul>    
+  </li>
+  <li>
+    <a><em>Division operator</em>: divides the value on the left-hand side of the operator by the value on the right-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x / y #divides the x value by the value y</a>
+      </li>
+    </ul>    
+  </li>
+  <li>
+    <a><em>Modulus operator</em>: divides the value on the left-hand side of the operator by the value on the right-hand side of the operator and returns the remainder</a>
+    <ul>
+      <li>
+        <a>x % y #finds the remainder of the value x divided by value y</a>
+      </li>
+    </ul>     
+  </li>
+  <li>
+    <a><em>Exponentiation operator</em>: raises the value on the left-hand side of the operator to the value on the right-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x ** y #finds the value of x raised to the value y</a>
+      </li>
+    </ul>    
+  </li>
+  <li>
+    <a><em>Floor division</em>: divides the value on the left-hand side of the operator by the value on the right-hand side of the operator and returns that value to rounded down to the nearest integer</a>
+    <ul>
+      <li>
+        <a>x // y #finds the value of x divided by y rounded down to the nearest integer</a>
+      </li>
+    </ul>    
+  </li>  
+</ul>   
+
+## Shorthand Assignment Operators
+<ul>
+  <li>
+    <a><em>Addition assignment operator</em>: adds the value on the right-hand side of the operator to the value on the left-hand side and stores the summation in the variable on the left-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x += y #means x equals the sum of x and y</a>
+      </li>
+      <li>
+        <a>--> x = x + y</a>
+      </li>  
+    </ul>
+  </li>
+  <li>
+    <a><em>Subtraction assignment operator</em>: subtracts the value on the right-hand side of the operator from the value on the left-hand side and stores the subtraction in the variable on the left-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x -= y #means x equals the subtraction of y from x</a>
+      </li>
+      <li>
+        <a>--> x = x - y</a>
+      </li> 
+    </ul>
+  </li>
+  <li>
+    <a><em>Multiplication assignment operator</em>: multiplies the value on the right-hand side of the operator to the value on the left-hand side and stores the product in the variable on the left-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x *= y #means x equals the product of x and y</a>
+      </li>
+      <li>
+        <a>--> x = x * y</a>
+      </li> 
+    </ul>
+  </li>
+  <li>
+    <a><em>Division assignment operator</em>: divides the value on the left-hand side of the operator to the value on the left-hand side of the operator and stores the division in the variable on the left-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x /= y #means x equals x divided by y</a>
+      </li>
+      <li>
+        <a>--> x = x / y</a>
+      </li> 
+    </ul>
+  </li>
+  <li>
+    <a><em>Modulo assignment operator</em>: finds the remainder of the value on the left-hand side of the operator divided by the value on the right-hand side and stores the remainder in the variable on the left-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x %= y #means x equals the remainder of x divided by y</a>
+      </li>
+      <li>
+        <a>--> x = x % y</a>
+      </li> 
+    </ul>
+  </li>  
+  <li>
+    <a><em>Exponentiation assignment operator</em>: raises the value on the left-hand side of the operator to the value on the right-hand side of the operator and stores that value in the variable on the left-hand side of the operator</a>  
+    <ul>
+      <li>
+        <a>x **= y #means x equals the x raised to the y</a>
+      </li>
+      <li>
+        <a>--> x = x ** y</a>
+      </li> 
+    </ul>                 
+  </li> 
+  <li>
+    <a><em>Floor division assignment operator</em>: divides the value on the left-hand side of the operator by the value on the right-hand side of the operator and stores the division rounded down to the nearest integer to the variable on the left-hand side of the operator</a>
+    <ul>
+      <li>
+        <a>x //= y #means x equals the floor division of x divided by y</a>
+      </li>
+      <li>
+        <a>--> x = x // y</a>
+      </li> 
+    </ul>
+  </li>  
+</ul>
